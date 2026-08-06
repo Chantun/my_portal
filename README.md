@@ -1,16 +1,59 @@
-# React + Vite
+# my_portal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Portal estático que lista los subdominios de **sdmn.dev**. Para cada subdominio muestra una breve descripción, el hosting actual donde está desplegado y el enlace a su repositorio de GitHub.
 
-Currently, two official plugins are available:
+## Subdominios
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+| Subdominio          | Host   | Descripción                                                               |
+| ------------------- | ------ | ------------------------------------------------------------------------- |
+| sdmn.dev            | Render | Dominio principal, esta misma página portal.                              |
+| calendario.sdmn.dev | Oracle | Calendario académico que guarda materias, horarios y eventos importantes. |
+| clock.sdmn.dev      | Render | Un reloj digital hecho a partir de muchos relojes analógicos.             |
+| todo.sdmn.dev       | Oracle | Página de ToDo con inicio de sesión persistente.                          |
 
-## React Compiler
+Los subdominios se cargan desde `src/data.json`, por lo que se pueden agregar o modificar entradas editando ese archivo.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tecnologías
 
-## Expanding the ESLint configuration
+- [React](https://react.dev)
+- [Vite](https://vite.dev)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Comandos
+
+```bash
+# Instalar dependencias
+npm install
+
+# Servidor de desarrollo
+npm run dev
+
+# Compilar para producción
+npm run build
+
+# Previsualizar la compilación
+npm run preview
+
+# Ejecutar el linter
+npm run lint
+```
+
+## Estructura
+
+```
+├── public/
+├── src/
+│   ├── modules/
+│   │   ├── Header.jsx
+│   │   └── Subdomain.jsx
+│   ├── style/
+│   ├── App.jsx
+│   ├── data.json
+│   └── main.jsx
+├── index.html
+├── package.json
+└── vite.config.js
+```
+
+## Licencia
+
+Ver [LICENSE](LICENSE).
