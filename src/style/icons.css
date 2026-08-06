@@ -1,0 +1,50 @@
+.cloudflare-icon,
+.github-icon,
+.oracle-icon,
+.render-icon {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.cloudflare-icon::before,
+.github-icon::before,
+.oracle-icon::before,
+.render-icon::before {
+	content: "";
+	display: inline-block;
+	width: 1.2em;
+	height: 1.2em;
+	flex-shrink: 0;
+	background-color: currentColor;
+	mask-repeat: no-repeat;
+	mask-position: center;
+	mask-size: contain;
+	-webkit-mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	-webkit-mask-size: contain;
+}
+
+.cloudflare-icon::before {
+	-webkit-mask-image: url("../assets/icons/cloudflare.svg");
+	mask-image: url("../assets/icons/cloudflare.svg");
+	background-color: #f48220;
+}
+
+.github-icon::before {
+	-webkit-mask-image: url("../assets/icons/github.svg");
+	mask-image: url("../assets/icons/github.svg");
+	background-color: #181717;
+}
+
+.oracle-icon::before {
+	-webkit-mask-image: url("../assets/icons/oracle.svg");
+	mask-image: url("../assets/icons/oracle.svg");
+	background-color: #f80000;
+}
+
+.render-icon::before {
+	-webkit-mask-image: url("../assets/icons/render.svg");
+	mask-image: url("../assets/icons/render.svg");
+	background-color: #0072ff;
+}

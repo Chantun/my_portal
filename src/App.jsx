@@ -11,6 +11,8 @@ function App() {
 			host={e.host}
 			details={e.details}
 			link={e.link}
+			icon={e.icon}
+			host_icon={e.host_icon}
 		/>
 	));
 
