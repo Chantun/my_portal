@@ -1,0 +1,64 @@
+:root {
+	--backgroud: #efefef;
+	--main-background: #fafafa;
+	--header: #f00;
+}
+
+body {
+	margin: 0;
+	background-color: var(--backgroud);
+	overflow: hidden;
+}
+
+main {
+	flex: 1;
+	margin: 0 auto;
+	max-width: 950px;
+	width: 100%;
+	background-color: var(--main-background);
+	overflow-y: auto;
+	box-shadow: 0 0 20px #000;
+}
+
+header {
+	width: 100vw;
+	text-align: center;
+	background-color: var(--header);
+	z-index: 10;
+}
+
+header > h1 {
+	margin: 0;
+}
+
+#root {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.subdomain {
+	position: relative;
+	margin: 20px 12px;
+	padding: 12px 8px;
+}
+
+.subdomain::before,
+.subdomain::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 2%;
+	border: solid 2px #000;
+}
+
+.subdomain::before {
+	left: 0;
+	border-right: none;
+}
+
+.subdomain::after {
+	right: 0;
+	border-left: none;
+}
