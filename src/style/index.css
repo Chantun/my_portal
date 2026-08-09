@@ -2,14 +2,19 @@
 
 :root {
 	--backgroud: #262626;
+	--foreground: #121212;
 	--main-background: #d9d9d9;
 	--sub-background: #f4f4f4;
+	--sub-foreground: #9273d0;
+	--sub-foreground-hover: #764cc9;
+	--anchor-foreground: #5920aa;
 }
 
 html,
 body,
 #root {
 	height: 100%;
+	color: var(--foreground);
 }
 
 html {
@@ -119,6 +124,23 @@ header > h1 {
 .subdomain::after {
 	right: 0;
 	border-left: none;
+}
+
+.subdomain__link {
+	text-decoration: none;
+	font-style: italic;
+	font-weight: 700;
+	color: var(--sub-foreground);
+}
+
+.subdomain__link:hover {
+	text-decoration: underline;
+	color: var(--sub-foreground-hover);
+}
+
+.subdomain__git {
+	text-decoration: none;
+	color: var(--anchor-foreground);
 }
 
 @media screen and (max-width: 800px) {
