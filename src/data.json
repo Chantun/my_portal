@@ -1,12 +1,5 @@
 [
 	{
-		"title": "sdmn.dev",
-		"host": "Render",
-		"icon": "cloudflare",
-		"details": "Dominio principal, esta misma pagina portal.",
-		"link": "https://github.com/Chantun/my_portal"
-	},
-	{
 		"title": "calendario.sdmn.dev",
 		"host": "Oracle",
 		"icon": "cloudflare",
@@ -14,9 +7,9 @@
 		"link": "https://github.com/Chantun/Calendario"
 	},
 	{
-		"title": "clock.sdmn.dev",
+		"title": "clock-ul7i.onrender.com",
 		"host": "Render",
-		"icon": "cloudflare",
+		"icon": "render",
 		"details": "Un reloj digital hecho a partir de muchos relojes analogicos.",
 		"link": "https://github.com/Chantun/clock"
 	},
@@ -26,5 +19,12 @@
 		"icon": "cloudflare",
 		"details": "Pagina de ToDo con inicio de sesion persistente.",
 		"link": "https://github.com/Chantun/ToDo"
+	},
+	{
+		"title": "ahorcado.sdmn.dev",
+		"host": "Render",
+		"icon": "cloudflare",
+		"details": "Juego del ahorcado.",
+		"link": "https://github.com/Chantun/react-hangman"
 	}
 ]
